@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="column is-4 is-offset-4">
+    <h3 class="title">Sign Up</h3>
+    <div class="box">
+        <form action="" method="POST">
+            {{ form.hidden_tag()}}
+            {{ form.username}}
+            {{ form.password}}
+            {{ form.submit}}
+        </form>
+        <a href="{{url_for('login')}}">Already have an account? Log In</a>
+    </div>
+</div>
+{% endblock %}
